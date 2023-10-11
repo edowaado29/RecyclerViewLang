@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.recyclerviewlang.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.recyclerviewlang.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.recyclerviewlang.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.recyclerviewlang.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_skill"
+        android:name="com.example.recyclerviewlang.ui.skill.SkillFragment"
+        android:label="@string/title_skills"
+        tools:layout="@layout/fragment_skill">
+
+        <action
+            android:id="@+id/action_nav_skill_to_skill_detail"
+            app:destination="@id/navigation_skill_detail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_skill_detail"
+        android:name="com.example.recyclerviewlang.ui.skill.SkillDetailFragment"
+        android:label="@string/title_skills_detail"
+        tools:layout="@layout/fragment_skill_detail" >
+        <argument
+            android:name="extra_name"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

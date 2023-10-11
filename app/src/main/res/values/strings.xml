@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecyclerViewLang</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_skills">Skills</string>
+    <string name="title_skills_detail">Skill Detail</string>
+    <string name="title_profile">Profile</string>
+</resources>
